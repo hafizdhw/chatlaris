@@ -52,6 +52,13 @@ export default function RootLayout(props: {
   // which dynamically adds a `style` attribute to the body tag.
   return (
     <html lang={props.params.locale} suppressHydrationWarning>
+      <head>
+        <script
+          async
+          src="https://js.stripe.com/v3/pricing-table.js"
+        >
+        </script>
+      </head>
       <body className="bg-background text-foreground antialiased" suppressHydrationWarning>
         {/* PRO: Dark mode support for Shadcn UI */}
         <NextIntlClientProvider

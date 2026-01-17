@@ -10,7 +10,7 @@ export const PricingInformation = (props: {
   const t = useTranslations('PricingPlan');
 
   return (
-    <div className="grid grid-cols-1 gap-x-6 gap-y-8 md:grid-cols-3">
+    <div className="flex flex-col justify-center gap-x-6 gap-y-8 md:flex-row">
       {Object.values(PricingPlanList).map(plan => (
         <PricingCard
           key={plan.id}

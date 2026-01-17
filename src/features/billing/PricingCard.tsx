@@ -1,3 +1,5 @@
+'use client';
+
 import { useTranslations } from 'next-intl';
 import React from 'react';
 
@@ -20,7 +22,7 @@ export const PricingCard = (props: {
 
       <div className="mt-3 flex items-center justify-center">
         <div className="text-5xl font-bold">
-          {`$${props.price}`}
+          {`Rp. ${props.price}`}
         </div>
 
         <div className="ml-1 text-muted-foreground">
